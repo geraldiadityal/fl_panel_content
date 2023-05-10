@@ -59,7 +59,9 @@ class _PanelContentState extends State<PanelContent> {
                 padding: EdgeInsets.only(
                   left: (widget.icon == null) ? 0 : 8.0,
                 ),
-                child: SizedBox(child: Text(widget.title, style: widget.titleStyle)),
+                child: Flexible(
+                  child: Text(widget.title, style: widget.titleStyle),
+                ),
               ),
             ],
           ),
