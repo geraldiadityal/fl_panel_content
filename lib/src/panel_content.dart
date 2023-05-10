@@ -33,7 +33,6 @@ class _PanelContentState extends State<PanelContent> {
       constraints: BoxConstraints(
         minHeight: 50,
         minWidth: size.width-16,
-        maxHeight: size.height-16,
       ),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),

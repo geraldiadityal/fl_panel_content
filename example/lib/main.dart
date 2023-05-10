@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import 'package:fl_panel_content/main.dart';
@@ -30,13 +29,16 @@ class _MyAppState extends State<MyApp> {
         body: Center(
           child: Padding(
             padding: const EdgeInsets.all(16.0),
-            child: PanelContent(
-              // icon: Icon(Icons.info),
-              title: 'Example aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaa',
-              body: Column(
-                children: [
-                  Text("Body 1"),
-                ],
+            child: SingleChildScrollView(
+              child: PanelContent(
+                // icon: Icon(Icons.info),
+                title: 'Example Title',
+                body: Column(
+                  children: [
+                    Text(
+                        "Example Body"),
+                  ],
+                ),
               ),
             ),
           ),
