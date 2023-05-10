@@ -1,8 +1,6 @@
-import 'package:fl_panel_content/fl_panel_content.dart';
-import 'package:flutter/material.dart';
-import 'dart:async';
 
-import 'package:flutter/services.dart';
+import 'package:flutter/material.dart';
+
 import 'package:fl_panel_content/main.dart';
 
 void main() {
@@ -34,7 +32,7 @@ class _MyAppState extends State<MyApp> {
             padding: const EdgeInsets.all(16.0),
             child: PanelContent(
               // icon: Icon(Icons.info),
-              title: 'Example',
+              title: 'Example aaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaa',
               body: Column(
                 children: [
                   Text("Body 1"),

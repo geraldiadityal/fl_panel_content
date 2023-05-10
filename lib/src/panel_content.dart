@@ -32,8 +32,8 @@ class _PanelContentState extends State<PanelContent> {
       padding: EdgeInsets.all(16),
       constraints: BoxConstraints(
         minHeight: 50,
-        minWidth: size.width,
-        maxHeight: size.height,
+        minWidth: size.width-16,
+        maxHeight: size.height-16,
       ),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
@@ -55,12 +55,13 @@ class _PanelContentState extends State<PanelContent> {
                 : MainAxisAlignment.start,
             children: [
               SizedBox(child: widget.icon),
-              Padding(
-                padding: EdgeInsets.only(
-                  left: (widget.icon == null) ? 0 : 8.0,
-                ),
-                child: Flexible(
-                  child: Text(widget.title, style: widget.titleStyle),
+              SizedBox(width: 16,),
+              Flexible(
+                child: Text(
+                  widget.title,
+                  style: widget.titleStyle,
+                  maxLines: 10,
+                  overflow: TextOverflow.ellipsis,
                 ),
               ),
             ],
